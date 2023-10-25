@@ -1,0 +1,6 @@
+node_modules
+lib
+*-error.log
+service-account.json
+package-lock.json
+.env
