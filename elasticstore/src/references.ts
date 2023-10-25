@@ -16,22 +16,7 @@ const references: Array<Reference> = [
       location: `${data.location._latitude},${data.location._longitude}` // transform from firestore's geopoint to elasticsearch's
     })
     */
-  },
-  {
-    collection: "Coach",
-    index: "Coach",
-    /* 
-    mappings: {
-      location: {
-        type: "geo_point" // elasticsearch's definition of a geopoint
-      }
-    },
-    transform: (data, parent) => ({
-      ...data,
-      location: `${data.location._latitude},${data.location._longitude}` // transform from firestore's geopoint to elasticsearch's
-    })
-    */
-  },
+  }
 ]
 
 export default references
