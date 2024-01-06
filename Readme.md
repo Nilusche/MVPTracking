@@ -1,24 +1,22 @@
-# How to install
 
-### Docker
-1. open docker folder 
-2. run ``` docker-compose up -d ```
+Dieses Programm generiert fake Daten, schickt sie zum Elastic Cloud und erfüllt spezifische Anforderungen, um explorativ Daten zu analysieren.
 
-this will make Elasticsearch (9200), logstash (5044) and kibana(5601) running
+# Erklärung der Dateien
 
-### Firebase
-1. open Firebase folder
-2. run ``` npm install ```
-3. run ``` npm run build  ```
+## 1. faker_firebase.ipynb
+Dieses Program generiert fake Daten mittels Faker Modul und schickt sie zum Firestore. Dafür benötigt man die Datei *serviceAccount.json*, die man in Firestore Konsole findet.
 
+## 2. serviceAccount.json
+Siehe 1
 
+## 3. firebase_to_elastic.ipynb
+Dieses Programm bekommt die Daten vom Firestore, filtert sie, schickt die gefilterten Daten zum Elasticstore und erstellt Indexe, Dataviews, Rollen und Dashboards.
 
-### Elasticstore
-1. open Elasticstore folder
-2. run ``` npm install ```
-3. run ``` npm start  ```
+## 4. Dashboards.ndjson
+Hier findet man die fünf Dashboards exportiert, die wir erstellt haben.
 
-This will make the pipeline from firestore to elasticstore. By me it worked: if I add a new collection in Firebase console, I get a notification in elasticstore telling ``` Added [doc@FfQRaL6WIdFoyJSSFevp]  ```. If I update it, it will say: ``` updated [doc@FfQRaL6WIdFoyJSSFevp]  ```
+## 5. plz_geocoord.csv
+Diese Datei ist wichtig, um die Standorte der User mittels PLZ zu ermitteln.
 
-The file references.ts inside elasticstore is responsible for correcting the pipeline. 
-More information: https://medium.com/@acupofjose/wondering-how-to-get-elasticsearch-and-firebases-firestore-to-play-nice-1d84553aa280 
+## 6. new_dashboards 
+Diese Datei wird nach der Ausführung befüllt, um Dashboards für verschiedene Origsnisationen zu erstellen. 
