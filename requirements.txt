@@ -1,0 +1,6 @@
+elasticsearch==8.10.1
+Faker==19.13.0
+firebase_admin==6.2.0
+pandas==2.1.4
+python-dotenv==1.0.0
+Requests==2.31.0

@@ -1,3 +1,6 @@
 /.idea
 /new_dashboards/*
+.env
+serviceAccount.json
+
 
