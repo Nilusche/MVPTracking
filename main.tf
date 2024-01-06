@@ -1,3 +1,10 @@
+
+provider "google" {
+  project     = "<PROJECT_ID>"
+  region      = "<REGION>"
+  zone       = "<ZONE>"
+}
+
 #APIs to enable
 resource "google_project_service" "run_api" {
   service            = "run.googleapis.com"
