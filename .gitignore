@@ -1,2 +1,5 @@
 /.idea
-/Pipeline/new_dashboards
+/new_dashboards
+
+serviceAccount.json
+plz_geocoord.csv
