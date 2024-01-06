@@ -1,10 +1,3 @@
-
-provider "google" {
-  credentials = file("<PATH_TO_YOUR_SERVICE_ACCOUNT_KEY_JSON>")
-  project     = "<PROJECT_ID>"
-  region      = "<REGION>"
-}
-
 #APIs to enable
 resource "google_project_service" "run_api" {
   service            = "run.googleapis.com"
