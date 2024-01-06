@@ -32,3 +32,6 @@ Die `.env.template` muss ersetzt werden durch eine .env Datei mit den Daten aus 
 <li>ELASTIC_PASSWORT: Nutzerpasswort, zurücksetzen unter "Manage this Deployment" -> Security / Reset password</li> 
 </ol>
 <img width="182" alt="image" src="https://github.com/majdbousaad/MVPTracking/assets/73897941/5f3f0dde-5987-4ad9-810c-1a4b3d7f17ed">
+
+## Dockerfile
+Diese Datei kann man optionalerweise verwenden um das Skript in einem Docker Container zum Laufen zu bringen
